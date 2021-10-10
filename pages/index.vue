@@ -1,5 +1,5 @@
 <template>
-  <p>today is sunday</p>
+  <p>today is yekshanbe</p>
 </template>
 
 <script>
