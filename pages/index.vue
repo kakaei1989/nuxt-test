@@ -3,9 +3,10 @@
     <div>
       <NuxtLink to="/posts">پست ها</NuxtLink>
       <NuxtLink to="/users">کاربران</NuxtLink>
-      <p>counter:{{ $store.state.counter.counter }}</p>
-      <button @click="$store.dispatch('counter/increment')">افزایش</button>
-      <button @click="$store.dispatch('counter/decrement')">کاهش</button>
+
+      <p class="is-size-1">counter:{{ $store.state.counter.counter }}</p>
+      <button class="button is-primary" @click="$store.dispatch('counter/increment')">افزایش</button>
+      <button class="button is-danger" @click="$store.dispatch('counter/decrement')">کاهش</button>
     </div>
     <!--   <img :src="require('~/assets/download.png')" alt="">-->
   </div>
