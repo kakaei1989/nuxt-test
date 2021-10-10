@@ -1,5 +1,12 @@
 <template>
-  <p>today is yekshanbe</p>
+  <div class="container">
+    <div>
+      <p>counter:{{ $store.state.counter.counter }}</p>
+      <button @click="$store.dispatch('counter/increment')">افزایش</button>
+      <button @click="$store.dispatch('counter/decrement')">کاهش</button>
+    </div>
+    <!--   <img :src="require('~/assets/download.png')" alt="">-->
+  </div>
 </template>
 
 <script>
